@@ -1,0 +1,112 @@
+/*master styles*/ 
+body{
+    margin: 10px;
+}
+/*nav styles*/
+.toppart{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px;
+   
+}
+/*master style*/
+.container{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+/*nav style*/
+.nav-link{
+    display: flexbox;
+    font-size: 25px;
+}
+.nav-link a {
+    color: rgb(151, 99, 36);
+    text-decoration: none;
+    transition: color 1s;
+}
+.nav-link :hover{
+    border-bottom: 2px solid black;
+}
+.nav-link a:hover{
+    color: black;
+}
+/*homepage style*/
+.bodywrapper{
+    display: grid;
+    grid-template-columns: 1fr;
+    
+}
+.onetime-wrapper{
+    position: relative;
+}
+.body-backgroundimage{
+    height: 1200px;
+    width: 1500px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.img-textinside{
+    position: absolute;
+    top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    height: 100%;
+    font-family: fantasy;
+    font-size: large;
+   /* padding-top: 200px;*/
+   padding-left: 200px;
+   
+
+}
+.img-textinside .image-subtitle{
+    transition: 1s;
+    color: transparent;
+}
+.img-textinside:hover .image-subtitle{
+   font-weight: 500;
+    color: steelblue;
+}
+.img-darken{
+    transition: 1s;
+    filter: brightness(20%);
+}
+.linkedinlogo{
+    width: 150px;
+    height: 100px;
+    margin: 0px;
+}
+.linkedin{
+    display: flex;
+    flex-direction: column;
+   
+}
+.info{
+    font-size: 20px;
+    font-weight: 300;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-left: 35px;
+    padding: 10px;
+   /* background-image: linear-gradient(black,darkgrey);*/
+}
+.contact{
+    background-image:linear-gradient(darkgrey,white);
+    background-size: cover;
+}
+    
+    
+    p{
+        margin-left: 35px;
+        font-size: 20px;
+        font-weight: 300;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+     
+    @media only screen and (max-width:425px){
+        .toppart{
+            flex-direction: column;
+        }
+    }    

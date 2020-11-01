@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+   
+    <title>TRITA ARCHITECTS</title>
+    <link rel="stylesheet" href="homestyle.css">
+    <link rel="stylesheet" href="responsive.css">
+</head>
+<body>
+   <div class="container">
+      <div class="toppart">
+         <img src="TALOGO1.png" alt="" width="120px" height="120px" >
+         <div class="nav-link">
+            <a href="index.html">Home</a>
+         </div>
+         <div class="nav-link">
+            <a href="portfolio.html">Portfolio</a>
+         </div>
+        
+         <div class="nav-link">
+             <a href="contactus.html">Contact us</a>
+         </div>
+      </div>
+      <div class="body-content">
+          <div class="bodywrapper">
+               <div class="oneitem-wrapper">
+                    <div class="body-backgroundimage" style="background-image:url(architecturebuilding.jpg)"></div>
+                 <div class="img-textinside"> 
+                    <div class="image-subtitle">
+                     Trita Architect is an Indian-based architecture firm offering interior design and architectural design services dedicated to exceeding your needs.</br> 
+                    The projects of Trita architects are the result of balanced research between technology, materials, style, designs, and contemporary art. </br>Our mission is to complete your needs in terms of design as well as comfortability.</br>Basing their design principles off of flexibility, practicality, durability and smart technology.</br> With Trita architects, you can reconnect with your roots and discover the break that you needed all along.
+                    
+                  </div>
+                 </div>
+              </div>
+          </div>
+      </div>
+   </div>
+</body>
+<script>
+    const texting=document.querySelectorAll('.oneitem-wrapper')
+    texting.forEach(allitems => {
+    allitems.addEventListener('mouseover',() => {allitems.childNodes[1].classList.add('img-darken');})
+    allitems.addEventListener('mouseout',() => {allitems.childNodes[1].classList.remove('img-darken');})
+    })
+</script>
+</html>
